@@ -1,0 +1,22 @@
+Carbon Icons
+============
+
+This directory holds icons from Carbon Icons (https://github.com/carbon-design-system/carbon),
+version 11.91.0 of the npm package @carbon/icons (upstream ref v11.119.0).
+Copyright IBM Corp. Licensed under the Apache License, Version 2.0; the
+licence text is the LICENSE file beside this one.
+
+Upstream ships no NOTICE file at that ref. Checked 2026-11-04:
+  - carbon-design-system/carbon@v11.119.0/NOTICE (404)
+  - packages/icons/NOTICE (404)
+
+Changes made by Simtabi LLC when the files were vendored into
+ichava/icon-sets-carbon (Apache-2.0 section 4(b)):
+
+  - Every SVG was passed through the icon-sets-sync SVG sanitiser (policy v2),
+    which removes elements and attributes outside its allow list.
+  - Files were renamed and moved into one directory per variant, as described
+    in ATTRIBUTION.md and docs/architecture.md.
+  - Only a subset of the upstream files is included (see ATTRIBUTION.md).
+
+The drawings themselves were not edited.
