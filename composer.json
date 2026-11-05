@@ -1,7 +1,7 @@
 {
     "name": "ichava/icon-sets-carbon",
     "description": "2,841 Carbon Design System SVG icons (2,773 at 32 px, 68 at 16 px) from @carbon/icons 11.91.0, for Laravel 13 on the Ichava icon ecosystem. Icons Apache-2.0.",
-    "type": "library",
+    "type": "ichava-icon-set",
     "keywords": [
         "laravel",
         "blade",
@@ -24,9 +24,7 @@
     ],
     "require": {
         "php": "^8.4.1 || ^8.5",
-        "illuminate/support": "^13.0",
-        "ichava/core": "^0.1",
-        "laranail/package-tools": "^0.1.0"
+        "ichava/core": "^0.1"
     },
     "repositories": [
         {
