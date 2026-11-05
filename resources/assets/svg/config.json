@@ -68,7 +68,7 @@
     "checked_at": "2026-11-04",
     "file": "resources/assets/svg/licenses/carbon/LICENSE",
     "source": "https://github.com/carbon-design-system/carbon/blob/v11.119.0/LICENSE",
-    "notice": "resources/assets/svg/licenses/carbon/NOTICE"
+    "notice": "resources/assets/svg/NOTICE"
   },
   "upstream": {
     "source": {

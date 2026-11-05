@@ -79,7 +79,20 @@ it(description: 'ships the upstream licence text, unchanged since it was verifie
     $this->assertStringContainsString('resources/assets/svg/licenses/carbon/LICENSE', (string) file_get_contents(attribution_root() . '/ATTRIBUTION.md'));
 });
 
-it(description: 'ships the NOTICE file beside the licence', closure: function () {
-    expect(is_file(attribution_root() . '/resources/assets/svg/licenses/carbon/NOTICE'))->toBeTrue();
-    $this->assertStringContainsString('resources/assets/svg/licenses/carbon/NOTICE', (string) file_get_contents(attribution_root() . '/ATTRIBUTION.md'));
+it(description: 'ships the NOTICE file outside the licence directory the sync replaces', closure: function () {
+    expect(is_file(attribution_root() . '/resources/assets/svg/NOTICE'))->toBeTrue();
+    $this->assertStringContainsString('resources/assets/svg/NOTICE', (string) file_get_contents(attribution_root() . '/ATTRIBUTION.md'));
+
+    $config = json_decode((string) file_get_contents(attribution_root() . '/resources/assets/svg/config.json'), true, flags: JSON_THROW_ON_ERROR);
+    expect($config['license']['notice'])->toBe('resources/assets/svg/NOTICE');
+});
+
+it(description: 'keeps only upstream licence files in licenses/carbon/', closure: function () {
+    // icon-sets-sync's licence sink deletes this directory and writes upstream's
+    // licence files back on every real sync, so a file the pack wrote here
+    // itself would be lost. Upstream ships LICENSE and nothing else (a dry run
+    // of the recipe reports would_write=[LICENSE]).
+    $files = array_values(array_diff(scandir(attribution_root() . '/resources/assets/svg/licenses/carbon') ?: [], ['.', '..']));
+
+    expect($files)->toBe(['LICENSE']);
 });
