@@ -92,6 +92,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). Report vulnerabilities privately through
 
 ## License
 
-Two licences apply, split by file. The package code is **MIT**, © Simtabi LLC, and the root [LICENSE](LICENSE) is that MIT text. The icons are [Carbon Icons](https://carbondesignsystem.com/elements/icons/library/), © IBM Corp., under the **Apache License 2.0**; its text is `resources/assets/svg/licenses/carbon/LICENSE`, beside a `NOTICE` that says how the files were changed.
+Two licences apply, split by file. The package code is **MIT**, © Simtabi LLC, and the root [LICENSE](LICENSE) is that MIT text. The icons are [Carbon Icons](https://carbondesignsystem.com/elements/icons/library/), © IBM Corp., under the **Apache License 2.0**; its text is `resources/assets/svg/licenses/carbon/LICENSE`, and a `NOTICE` that says how the files were changed is `resources/assets/svg/NOTICE`.
 
 Simtabi LLC claims no authorship of the icons. The terms, what was changed and the credit line are in [ATTRIBUTION.md](ATTRIBUTION.md), which ships with the package and must accompany any copy of the icons.

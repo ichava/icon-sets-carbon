@@ -4,7 +4,7 @@ Carbon Icons
 This directory holds icons from Carbon Icons (https://github.com/carbon-design-system/carbon),
 version 11.91.0 of the npm package @carbon/icons (upstream ref v11.119.0).
 Copyright IBM Corp. Licensed under the Apache License, Version 2.0; the
-licence text is the LICENSE file beside this one.
+licence text is licenses/carbon/LICENSE, under this directory.
 
 Upstream ships no NOTICE file at that ref. Checked 2026-11-04:
   - carbon-design-system/carbon@v11.119.0/NOTICE (404)
