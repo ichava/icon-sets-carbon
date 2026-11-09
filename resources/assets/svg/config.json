@@ -12,7 +12,7 @@
       "carbon-design-system"
     ],
     "version": "0.1.0",
-    "upstream_version": "11.91.0",
+    "upstream_version": "11.92.0",
     "type": "multi",
     "kind": "icon",
     "license": "MIT (code) / Apache-2.0 (icons)"
@@ -77,7 +77,7 @@
       "_ref": "v11.119.0",
       "_repository": "https://github.com/carbon-design-system/carbon"
     },
-    "current_version": "11.91.0",
+    "current_version": "11.92.0",
     "version_check_url": "https://registry.npmjs.org/@carbon/icons/latest",
     "license": "Apache-2.0",
     "update_command": {
