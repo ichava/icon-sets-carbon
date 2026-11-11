@@ -7,7 +7,7 @@
 
 The licence badge names both licences: the package code is MIT and the icons are Apache-2.0 (see [License](#license)).
 
-> Carbon Icons for the Ichava Laravel icon ecosystem: 2,841 SVGs across `size-32` (2,773), `size-16` (68), vendored from `@carbon/icons`.
+> Carbon Icons for the Ichava Laravel icon ecosystem: 2,847 SVGs across `size-32` (2,779), `size-16` (68), vendored from `@carbon/icons`.
 
 Requires [`ichava/core`](https://github.com/ichava/core) `^0.1` on PHP `^8.4.1 || ^8.5` and Laravel `^13`.
 

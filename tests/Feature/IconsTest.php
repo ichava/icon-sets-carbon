@@ -40,11 +40,11 @@ it(description: 'picks up the package in the icon registry', closure: function (
 });
 
 it(description: 'ships one directory per variant, holding the measured number of icons', closure: function () {
-    // Counted 2026-11-04 from the vendored tree. The subset is deliberate (see
+    // Counted 2026-11-11 from the vendored tree (11.92.0). The subset is deliberate (see
     // docs/architecture.md); a refresh that changes a count changes this table
     // in the same pull request, so a silently shrunk or grown variant fails.
     $expected = [
-        'size-32' => 2773,
+        'size-32' => 2779,
         'size-16' => 68,
     ];
 
