@@ -10,7 +10,7 @@ All notable changes to `ichava/icon-sets-carbon` follow [Keep a Changelog](https
 - **The pack's `NOTICE` moved to `resources/assets/svg/NOTICE`**, out of `resources/assets/svg/licenses/carbon/`. That directory is the one icon-sets-sync's licence sink deletes and refills with upstream's licence files on a real sync, and upstream ships no NOTICE, so the first sync would have deleted the statement of changes Apache-2.0 section 4(b) asks for (icon-sets-sync#88). `config.json`'s `license.notice`, `ATTRIBUTION.md` and the README point at the new path, and `AttributionTest` now fails if anything but `LICENSE` sits in the licence directory.
 - **The upstream sync runs icon-sets-sync `06b17d7`** (icon-sets-sync#88), up from `5fa93a6`, which adds this pack's recipe, the `split-variants` and `exclude` transforms, and the `licence_sha256` pin on the upstream licence text. The `uses:` pin and `toolkit-ref` move together; the reusable workflow's inputs did not change between the two commits, so the caller's `with:` block is untouched.
 
-## [0.1.0] - TBD
+## [0.1.0] - 2026-11-13
 
 First release of `ichava/icon-sets-carbon` (pack plan rank, owner decision of 2026-11-04 to ship every planned pack in v0.1.0).
 
